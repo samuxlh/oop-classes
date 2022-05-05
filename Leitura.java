@@ -1,3 +1,6 @@
+//Samuel Cezar dos Santos | 1996789
+//Prog. Orientada Objetos - ADS
+
 import java.util.Scanner;
 
 public class Leitura {

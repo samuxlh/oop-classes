@@ -1,3 +1,6 @@
+//Samuel Cezar dos Santos | 1996789
+//Prog. Orientada Objetos - ADS
+
 public class Carro {
 
   private String renavam;
@@ -6,7 +9,7 @@ public class Carro {
   private String placa;
 
   public void setRenavam(String renavam) throws CarroExceptions {
-    if (renavam.length() > 10) {
+    if (renavam.length() == 7) {
       this.renavam = renavam;
     } else {
 		throw new CarroExceptions();
@@ -14,7 +17,7 @@ public class Carro {
   }
 
   public void setModelo(String modelo) throws CarroExceptions {
-    if (modelo.length() <= 30) {
+    if (modelo.length() <= 32) {
       this.modelo = modelo;
     } else {
       throw new CarroExceptions();
@@ -37,6 +40,22 @@ public class Carro {
     }
   }
 
+  public String getRenavam() {
+	return renavam;
+  }
+
+  public String getModelo() {
+	return modelo;
+  }
+
+  public String getMarca() {
+	return marca;
+  }
+
+  public String getPlaca() {
+	return placa;
+  }
+
   public Carro() {
     renavam = "";
     modelo = "";
@@ -44,19 +63,4 @@ public class Carro {
     placa = "";
   }
 
-  public String getRenavam() {
-    return renavam;
-  }
-
-  public String getModelo() {
-    return modelo;
-  }
-
-  public String getMarca() {
-    return marca;
-  }
-
-  public String getPlaca() {
-    return placa;
-  }
 }
