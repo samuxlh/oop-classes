@@ -1,13 +1,17 @@
 //Samuel Cezar dos Santos | 1996789
 //Prog. Orientada Objetos - ADS
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
-
+  private static List<Carro> listaCarros = new ArrayList<Carro>();
   public static void main(String arg[]) throws CarroExceptions {
     Leitura l = new Leitura();
     boolean isRunning = true;
 
     while (isRunning) {
+
+
       System.out.println("\n\nBem vindo usuario, o que deseja fazer?");
       System.out.println("1 - Inserir Carro");
       System.out.println("Escolha uma opcao");
@@ -73,7 +77,7 @@ public class Main {
               System.out.println("Tente inserir outro valor.");
             }
           }
-
+          listaCarros.add(c1);
           System.out.println("\nCarro inserido com sucesso!");
 
 		  System.out.println("\n\nPressione:\n0 - Encerrar\n1 - Voltar ao inicio");

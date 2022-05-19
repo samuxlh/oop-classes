@@ -32,9 +32,7 @@ public class Janela implements ActionListener{
 
 	static Janela j1 = new Janela();
 
-	
 	public static void main(String arg[]){
-
 		criaJan();
 	}
 
@@ -69,8 +67,7 @@ public class Janela implements ActionListener{
 
 		jan1.setLayout(new FlowLayout());
 		jan1.setVisible(true);
-
-	}//Final do main
+	}
 	
 	public void actionPerformed(ActionEvent evt){
 
